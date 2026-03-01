@@ -3,19 +3,21 @@
 /**
  * @author ChimpGamer
  * @date 11-9-2023
+ * @modified P2Paul
+ * @date 1-3-2026
  */
 
 return [
-    'navbar_home' => '<i class="fa fa-house"></i> Thuispagina',
-    'navbar_bans' => '<i class="fa fa-gavel"></i> Bans <span class="badge badge-danger">:total_bans</span>',
-    'navbar_mutes' => '<i class="fa fa-comment-slash"></i> Mutes <span class="badge badge-danger">:total_mutes</span>',
-    'navbar_kicks' => '<i class="fa fa-eject"></i> Kicks <span class="badge badge-danger">:total_kicks</span>',
-    'navbar_warns' => '<i class="fa fa-triangle-exclamation"></i> Waarschuwingen <span class="badge badge-danger">:total_warns</span>',
+    'navbar_home' => 'Home',
+    'navbar_bans' => ':total_bans Bans',
+    'navbar_mutes' => ':total_mutes Mutes',
+    'navbar_kicks' => ':total_kicks Kicks',
+    'navbar_warns' => ':total_warns Warns',
 
     'title_bans' => 'Bans',
     'title_mutes' => 'Mutes',
     'title_kicks' => 'Kicks',
-    'title_warns' => 'Waarschuwingen',
+    'title_warns' => 'Warns',
     'title_player' => 'Speler :username',
 
     'variable_playername' => 'Spelernaam',
@@ -28,7 +30,7 @@ return [
     'variable_muted_on' => 'Gemute op',
     'variable_muted_until' => 'Gemute tot',
 
-    'variable_kicked_on' => 'Kicked op',
+    'variable_kicked_on' => 'Gekicked op',
 
     'variable_warned_on' => 'Gewaarschuwd op',
 
@@ -41,14 +43,14 @@ return [
     'variable_active' => 'ACTIEF',
     'variable_expired' => 'Verlopen',
 
-    'variable_unbanned_by' => 'Unbanned By',
-    'variable_unban_reason' => 'Unban Reason',
-    'variable_unmuted_by' => 'Unmuted By',
-    'variable_unmute_reason' => 'Unmute Reason',
+    'variable_unbanned_by' => 'Unbanned door',
+    'variable_unban_reason' => 'Unban reden',
+    'variable_unmuted_by' => 'Unmuted door',
+    'variable_unmute_reason' => 'Unmute reden',
 
     'variable_datetime_on' => 'op',
 
-    'player_joined' => '<i class="fa fa-calendar-days"></i> Joined',
+    'player_joined' => '<i class="fa fa-calendar-days"></i> Eerste login',
     'player_last_login' => '<i class="fa fa-clock-rotate-left"></i> Laatste login',
     'player_last_logout' => '<i class="fa fa-delete-left"></i> Laatste logout',
     'player_total_playtime' => '<i class="fa fa-clock"></i> Totale speeltijd',
@@ -59,7 +61,7 @@ return [
     'player_bans' => 'Bans :bans',
     'player_mutes' => 'Mutes :mutes',
     'player_kicks' => 'Kicks :kicks',
-    'player_warns' => 'Waarschuwingen :warns',
+    'player_warns' => 'Warns :warns',
 
     'placeholder_search_player' => '&#xf002; Zoek speler...',
     'placeholder_search' => '&#xf002; Zoek...',

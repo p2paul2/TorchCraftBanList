@@ -1,44 +1,414 @@
-body {
-    background-repeat: no-repeat;
-    background-size: cover !important;
-    background-attachment: fixed;
-    background-position: 50% 0;
+
+/* Achtergrond */
+
+#changebg {
+  display: block;
+  margin: 0;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%; 
 }
 
-@media (min-width: 991.98px) {
-    main {
-        padding-left: 240px;
+@media only screen and (max-width: 1024px) {
+#changebg {
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-attachment: fixed;
+  background-position: 50% 0;
+  overflow-x: hidden; 
+}
+}
+
+
+/* Header-onderdelen */
+
+.headerstijl {
+  padding-top: 5px;
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.copybutton {
+  border: 0px;
+  margin: 0px;
+  color: #ffffff;
+  font-size: 19px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.copybutton:hover {
+  text-decoration: underline;
+}
+
+a.menuhome:hover {
+  background-color: #86a3b5;
+  color: white;
+  border-radius: 4px 0 0 0;
+}
+
+
+/* Speler-zoekvak */
+
+#searchbar {
+    display: inline-block;
+    vertical-align: middle;
+    width: 99%;
+    border: 1px solid #bdbdbd;
+}
+
+/* SearchBar Mobile Fix*/
+@media only screen and (max-device-width: 480px) {
+    #searchbar {
+        width: 85%;
+    }
+
+    input#searchbar:active, input#searchbar:focus, input#searchbar:focus::-webkit-input-placeholder {
+        outline: none;
+        color: var(--mdb-body-color) !important;
+        transition: all .25s ease;
+        margin: -10% auto 0;
     }
 }
 
-.jumbotron {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    margin: 6% auto 30px;
-    color: inherit;
-    border-radius: .3rem;
+input#searchbar {
+    color: #bdbdbd;
+    font-size: 18px;
+    border-radius: 8px;
 }
 
-@media (min-width: 554px) {
-    padding: 4rem 2rem;
+input#searchbar::-webkit-input-placeholder {
+    color: #bdbdbd;
+    transition: all .25s ease;
+    font-size: 18px;
 }
 
-.footer-text-shadow {
-    text-shadow: 1px 1px black;
+input#searchbar:active, input#searchbar:focus, input#searchbar:focus::-webkit-input-placeholder {
+    outline: none;
+    color: gray;
+    transition: all .25s ease;
 }
 
-/* Fix weird table color when using dark theme */
-[data-mdb-theme=dark] .table {
-    --mdb-table-bg: var(--mdb-surface-bg) !important;
+[data-mdb-theme=dark] .easy-autocomplete-container ul {
+    background: none repeat scroll 0 0 var(--mdb-body-bg) !important;
 }
 
-#btn-back-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
+[data-mdb-theme=dark] .easy-autocomplete-container ul li.selected {
+    background: none repeat scroll 0 0 #383838 !important;
 }
 
-/* Some tweaks to the pagination */
+
+.banlijstlinks {
+  margin-top: 22px;
+  margin-left: -12px;
+}
+
+
+/* Spelervoorpagina */
+
+.spelersfoto1 {
+   width: 100%;
+   max-width: 1000px;
+   margin: 0px;
+   padding: 0px;
+   border-radius: 8px;
+}
+
+.spelersfoto2 {
+   width: 100%;
+   max-width: 600px;
+   margin: 0px;
+   padding: 0px;
+   border-radius: 6px;
+}
+
+.card {
+  position: relative;
+  top: -20px;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: var(--mdb-card-height);
+  color: var(--mdb-body-color);
+  word-wrap: break-word;
+  background-color: #ffffff;
+  background-clip: border-box;
+  border: var(--mdb-card-border-width) solid var(--mdb-card-border-color);
+  border-radius: var(--mdb-card-border-radius);
+  box-shadow: 0;
+}
+
+@media only screen and (max-width: 640px) {
+.card {
+  position: relative;
+  top: 0px;
+}
+}
+
+.card-header {
+  padding-bottom: 10px;
+  background-color: #ffffff;
+  text-align: left;
+  border-bottom-style: solid;
+  border-width: 2px;
+  border-color: #cccccc;
+} 
+
+.card-body {
+  text-align: left;
+}
+
+.text-center {
+   text-align: left !important;
+}
+
+h2.text-center {
+   text-align: center !important;
+}
+
+.shadow {
+   box-shadow: none !important;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #4f4f4f;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1) inset;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 8px;
+}
+
+input#punishmentsearch.form-control {
+   background: #ffffff;
+}
+
+
+/* Tabel-onderdelen */
+
+table {
+  width: 100%;
+}
+
+.table {
+  background: #ffffff;
+  color: #5a5e60;
+  border-color: #cccccc;
+}
+
+.table > :not(caption) > * > * {
+  border-color: #cccccc;
+  padding: 1rem 1.4rem;
+  border-bottom-width: 1px;
+}
+
+thead, tbody, tfoot, tr, td, th {
+  border-color: #cccccc;
+  border-style: solid;
+  border-width: 0;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.text-danger {
+  color: #dc4c64;
+}
+
+.text-success {
+  color: #14a44d;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+@media only screen and (min-width: 640px) {
+.anchor {
+  display: none;
+}
+}
+
+
+/* Punishment Modal */
+
+.modal {
+   z-index: 200;
+}
+
+.modal-backdrop {
+   display: none;
+   z-index: -1;
+}
+
+.modal-content {
+    z-index: 900;
+    box-shadow: 1px 5px 10px 1px #888888;
+}
+
+.modal-header {
+    background-color: #3e7598;
+}
+
+.modal-title {
+    color: #ffffff;
+}
+
+:root {
+   --mdb-btn-close-bg: none;
+}
+
+.closebutton {
+    background-color: transparent;
+    border: 0;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.closebutton:focus, .closebutton:hover {
+  color: #000000;
+  text-decoration:none;
+  cursor:pointer;
+}
+
+.btn-secondary {
+    background-color: #F9BD12;
+    color: #000000;
+}
+
+.btn-secondary:hover {
+    background: #F9BD12db;
+    color: #000000;
+}
+
+.modal-footer {
+   justify-content: unset;
+}
+
+
+
+/* Tabel-paginanavigatie */
+
 .pagination {
-    margin-bottom: 0 !important;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+.page-item {
+  padding: 5px;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  background-color: #ffffff;
+  border: 0;
+  padding: 4px;
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+  font-size: 14pt; 
+  color: #305dc7;
+  line-height: unset;
+  cursor: pointer;
+}
+
+.page-link.disabled, .disabled>.page-link {
+  pointer-events: none;
+}
+
+.page-link.active, .active>.page-link {
+  pointer-events: none;
+  color: #333333;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.page-link:hover {
+  font-weight: bold;
+  color: #305dc7;
+  background-color: transparent;
+}
+
+
+
+
+button.copybutton {
+  color: #ffffff;
+}
+
+.card-footer {
+  background-color: #ffffff;
+  text-align: left;
+} 
+
+.h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+h4, .h4 {
+  font-size: 24px;
+}
+
+.float-end {
+  float: right;
+}
+
+.text-center {
+ text-align: left;
+}
+
+.footertekst {
+    color: #ffffff;
+}
+
+
+/* Back-to-top buttom */
+
+#floatingbutton {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 36px;
+  border: 0px;
+  color: #F9BD12;
+  background: transparent;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+@media only screen and (max-width: 640px) {
+#floatingbutton {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  font-size: 36px;
+  border: 0px;
+  color: #F9BD12;
+  background: transparent;
+  cursor: pointer;
+  z-index: 9999;
+}
+}
+
+#floatingbutton:hover {
+  color: #fac633;
 }

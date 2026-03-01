@@ -79,7 +79,7 @@
                         <div class="mb-3">
                             <strong>@if($punishment->type->isBan()) @lang('messages.variable_unbanned_by') @elseif($punishment->type->isMute()) @lang('messages.variable_unmuted_by')@endif</strong>
                             <p><img alt="player head" draggable="false"
-                                    src="https://minotar.net/avatar/{{$punishment->unbanner}}/20"> <a wire:navigate
+                                    src="https://minotar.net/helm/{{$punishment->unbanner}}/20"> <a wire:navigate
                                     href="/player/{{ $punishment->unbanner }}">{{ $punishment->getUnbannerName() }}</a>
                         </div>
                         <div class="mb-3">
