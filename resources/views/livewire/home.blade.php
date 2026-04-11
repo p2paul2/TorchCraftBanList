@@ -18,6 +18,7 @@
     </style>
 @endpush
     
+<div>
 	<div align="center">
 	<br>
 
@@ -34,4 +35,5 @@ Spelers tijdens het Storage Wars-event in november 2023<br>
 	<br>
 	<div class="hidemobile"><br></div>
         </div>
+</div>
 

@@ -69,7 +69,7 @@
 
       <div class="votesitesboven">
 
-        @yield('content')
+        {{ $slot }}
 
       </div>
 

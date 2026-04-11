@@ -6,8 +6,8 @@
         : 'nav-link active';
 @endphp
 
-<div class="nav-item">
+<li class="nav-item">
     <a {{ $attributes->merge(['class' => $classes]) }}>
         {{ $slot }}
     </a>
-</div>
+</li>
