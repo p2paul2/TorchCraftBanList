@@ -104,6 +104,14 @@ input#searchbar:active, input#searchbar:focus, input#searchbar:focus::-webkit-in
 }
 
 
+/* Speler uitklapmenu */'
+
+.dropdown-menu {
+  color: #5a5e60 !important;
+  background-color: #ffffff !important;
+}
+
+
 /* Spelervoorpagina */
 
 .spelersfoto1 {
@@ -200,8 +208,8 @@ table {
 }
 
 .table {
-  background: #ffffff;
-  color: #5a5e60;
+  background-color: #ffffff !important;
+  color: #5a5e60 !important;
   border-color: #cccccc;
 }
 
@@ -248,6 +256,8 @@ thead, tbody, tfoot, tr, td, th {
 
 .modal {
    z-index: 200;
+  background-color: #ffffff !important;
+  color: #5a5e60 !important;
 }
 
 .modal-backdrop {

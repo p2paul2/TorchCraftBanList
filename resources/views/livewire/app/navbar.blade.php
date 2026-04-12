@@ -53,6 +53,14 @@ if( $MM == 3 ){
 }
 }
 
+if( $MM == 4 ){
+   if( $DD == 27){
+  $pic = "https://www.torchcraft.nl/images/tclogo-koningsdag.png";
+ }else  {
+  $pic = "https://www.torchcraft.nl/images/tclogo-standaard.png";
+}
+}
+
 if( $MM == 6 ){
    if( $DD >= 21 and $DD <= 30){
   $pic = "https://www.torchcraft.nl/images/tclogo-zomer.png";
