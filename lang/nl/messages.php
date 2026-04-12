@@ -4,7 +4,7 @@
  * @author ChimpGamer
  * @date 11-9-2023
  * @modified P2Paul
- * @date 1-3-2026
+ * @date 12-4-2026
  */
 
 return [
@@ -71,9 +71,9 @@ return [
             <h5>Totaal aantal straffen: <span class="badge badge-danger">:total_punishments</span></h5>',
 
     '404_title' => '404',
-    '404_text' => '<p class="h2">Sorry, we kunnen de pagina die u zoekt niet vinden.</p>
-                        <p class="lead">Klik op onderstaande knop om terug te gaan naar de startpagina.</p>',
-    '404_button_text' => 'Klik om naar de thuispagina te gaan',
+    '404_text' => '<p class="h2">Sorry, we kunnen de pagina die je zoekt niet vinden.</p>
+                        <p class="lead">Klik op onderstaande knop om terug te gaan naar de Spelers-pagina.</p>',
+    '404_button_text' => 'Klik om naar de Spelers-pagina te gaan',
 
     'length_menu' => ':menu resultaten weergeven',
 

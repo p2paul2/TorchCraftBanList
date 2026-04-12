@@ -11,7 +11,7 @@
                         @lang('messages.404_text')
                     </div>
                     <div>
-                        <a wire:navigate class="btn btn-primary" href="/" role="button">@lang('messages.404_button_text')</a>
+                        <a wire:navigate class="btn btn-primary" style="color: #ffffff" href="/" role="button">@lang('messages.404_button_text')</a>
                     </div>
                 </div>
             </div>
