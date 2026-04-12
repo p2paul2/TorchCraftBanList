@@ -225,7 +225,7 @@ Wil je een unban of inkorting van je straf aanvragen? Maak dan een <a href="http
 <td width="100">
 <div style="line-height:1.05" align="left">
 
-<i class="fa fa-gavel"></i> <x-nav-item :href="route('bans')" :active="request()->routeIs('bans')" wire:navigate>
+<x-nav-item :href="route('bans')" :active="request()->routeIs('bans')" wire:navigate>
                     @lang('messages.navbar_bans', ['total_bans' => $total_bans])
                 </x-nav-item><br>
 
@@ -233,11 +233,11 @@ Wil je een unban of inkorting van je straf aanvragen? Maak dan een <a href="http
                     @lang('messages.navbar_mutes', ['total_mutes' => $total_mutes])
                 </x-nav-item><br>
 
-                <x-nav-item :href="route('kicks')" :active="request()->routeIs('kicks')" wire:navigate>
+<x-nav-item :href="route('kicks')" :active="request()->routeIs('kicks')" wire:navigate>
                     @lang('messages.navbar_kicks', ['total_kicks' => $total_kicks])
                 </x-nav-item><br>
                    
-                <x-nav-item :href="route('warns')" :active="request()->routeIs('warns')" wire:navigate>
+<x-nav-item :href="route('warns')" :active="request()->routeIs('warns')" wire:navigate>
                     @lang('messages.navbar_warns', ['total_warns' => $total_warns])
                 </x-nav-item><br>
 </div>
