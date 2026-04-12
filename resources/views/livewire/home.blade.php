@@ -1,22 +1,4 @@
-@push('styles')
- <style>
-        @keyframes logo {
-            from {
-                transform: scale(1, 1);
-            }
-            to {
-                transform: scale(1.03, 1.03);
-            }
-        }
 
-        #logo img {
-            animation-name: logo;
-            animation-duration: 1s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-        }
-    </style>
-@endpush
     
 <div>
 	<div align="center">

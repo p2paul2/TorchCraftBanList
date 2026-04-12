@@ -187,7 +187,7 @@ function menutoggle() {
     <div class="paginaintro blokborder tekstopmaak">
       <div class="paginatitel">Spelers</div>
 <br>
-Hier vind je informatie over alle spelers die sinds mei 2017 op TorchCraft hebben gespeeld, bijvoorbeeld hoe lang iemand online of voor het laatst ingelogd was. Er is nu een aparte pagina met <a href="https://www.torchcraft.nl/eventwinnaars.php" class="tekst">Event-winnaars</a>!<br>
+Hier vind je informatie over alle spelers die sinds mei 2017 op TorchCraft hebben gespeeld, bijvoorbeeld hoe lang iemand online of voor het laatst ingelogd was. Bekijk ook de pagina met <a href="https://www.torchcraft.nl/eventwinnaars.php" class="tekst">Event-winnaars</a>!<br>
 <br>
 Ook vind je hier de banlijst met de straffen die zijn uitgedeeld wegens het overtreden van de <a href="https://help.torchcraft.nl/algemene-informatie/regels" class="tekst">regels</a>. <br>
 <br>
