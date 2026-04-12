@@ -225,7 +225,7 @@ Wil je een unban of inkorting van je straf aanvragen? Maak dan een <a href="http
 <td width="100">
 <div style="line-height:1.05" align="left">
 
-<x-nav-item :href="route('bans')" :active="request()->routeIs('bans')" wire:navigate>
+<i class="fa fa-gavel"></i> <x-nav-item :href="route('bans')" :active="request()->routeIs('bans')" wire:navigate>
                     @lang('messages.navbar_bans', ['total_bans' => $total_bans])
                 </x-nav-item><br>
 
