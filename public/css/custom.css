@@ -103,6 +103,10 @@ input#searchbar:active, input#searchbar:focus, input#searchbar:focus::-webkit-in
   margin-left: -12px;
 }
 
+.nav-link {
+  padding: 0px;
+}
+
 
 /* Speler uitklapmenu */'
 
