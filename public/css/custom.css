@@ -261,33 +261,16 @@ thead, tbody, tfoot, tr, td, th {
 
 /* Punishment Modal */
 
-.modal {
-   z-index: 200;
-  background-color: #ffffff;
-  color: #5a5e60;
+.modal:not(.modal-content) {
+  z-index: 200;
+  background-color: #000000;
+  opacity: 0.85;
 }
 
 .modal-backdrop {
    display: none;
    z-index: -1;
 }
-
-.modal-backdrop.show {
-  background-color: #000000;
-  opacity: 0.5;
-}
-
-.modal-backdrop.fade {
-  opacity: 0;
-}
-
-.fade {transition:opacity .15s linear}
-
-@media(prefers-reduced-motion: reduce) {
-.fade{transition:none}
-}
-
-.fade:not(.show){opacity:0}
 
 .modal-content {
     z-index: 900;
