@@ -263,13 +263,22 @@ thead, tbody, tfoot, tr, td, th {
 
 .modal {
    z-index: 200;
-  background-color: #ffffff !important;
-  color: #5a5e60 !important;
+  background-color: #ffffff;
+  color: #5a5e60;
 }
 
 .modal-backdrop {
    display: none;
    z-index: -1;
+}
+
+.modal-backdrop.show {
+  background-color: #000000;
+  opacity: 0.5;
+}
+
+.modal-backdrop.fade {
+  opacity: 0;
 }
 
 .modal-content {
