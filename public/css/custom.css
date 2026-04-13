@@ -261,7 +261,7 @@ thead, tbody, tfoot, tr, td, th {
 
 /* Punishment Modal */
 
-.modal:not(.modal-content) {
+.modal:not(.modal-dialog .modal-content) {
   z-index: 200;
   background-color: #000000;
   opacity: 0.85;
