@@ -281,6 +281,14 @@ thead, tbody, tfoot, tr, td, th {
   opacity: 0;
 }
 
+.fade {transition:opacity .15s linear}
+
+@media(prefers-reduced-motion: reduce) {
+.fade{transition:none}
+}
+
+.fade:not(.show){opacity:0}
+
 .modal-content {
     z-index: 900;
     box-shadow: 1px 5px 10px 1px #888888;
