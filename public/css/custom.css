@@ -261,15 +261,28 @@ thead, tbody, tfoot, tr, td, th {
 
 /* Punishment Modal */
 
-.modal:not(.modal-dialog .modal-content) {
-  z-index: 200;
+.modal-backdrop{
+  position:fixed;
+  top:0;
+  left:0;
+  z-index: 1050;
+  width:100vw;
+  height:100vh;
   background-color: #000000;
-  opacity: 0.85;
+  opacity: 0.5;
 }
 
-.modal-backdrop {
-   display: none;
-   z-index: -1;
+.modal-backdrop.fade {
+  opacity: 0;
+}
+
+.modal-backdrop.show {
+  opacity: 0.5;
+}
+
+.modal {
+  z-index: 200;
+  background-color: #000000;
 }
 
 .modal-content {
