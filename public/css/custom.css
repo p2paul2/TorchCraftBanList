@@ -265,7 +265,7 @@ thead, tbody, tfoot, tr, td, th {
   position:fixed;
   top:0;
   left:0;
-  z-index: 100;
+  z-index: 1050;
   width:100vw;
   height:100vh;
   background-color: #000000;
@@ -273,20 +273,18 @@ thead, tbody, tfoot, tr, td, th {
 }
 
 .modal-backdrop.fade {
-  opacity: 0;
-}
-
-.modal-backdrop.show {
   opacity: 0.5;
 }
 
+.modal-backdrop.show {
+  opacity: 0;
+}
+
 .modal {
-  z-index: 200;
-  background-color: #000000;
+  z-index: 1055;
 }
 
 .modal-content {
-    z-index: 900;
     box-shadow: 1px 5px 10px 1px #888888;
 }
 
