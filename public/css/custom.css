@@ -261,15 +261,15 @@ thead, tbody, tfoot, tr, td, th {
 
 /* Punishment Modal */
 
-.modal-backdrop.show {
-  opacity: 0.5;
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1055;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
-
-/*
-.modal-backdrop.fade {
-  opacity: 0;
-}
-*/
 
 .modal-backdrop {
   position:fixed;
@@ -281,14 +281,14 @@ thead, tbody, tfoot, tr, td, th {
   background-color: #000000;
 }
 
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1055;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden;
+/*
+.modal-backdrop.fade {
+  opacity: 0;
+}
+*/
+
+.modal-backdrop.show {
+  opacity: 0.5;
 }
 
 .modal-content {
