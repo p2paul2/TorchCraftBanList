@@ -261,6 +261,14 @@ thead, tbody, tfoot, tr, td, th {
 
 /* Punishment Modal */
 
+.modal-backdrop {
+    display: none;
+}
+
+.modal {
+    z-index: 1000;
+    background: rgb(0, 0, 0, 0.7);
+}
 
 .modal-content {
     box-shadow: 1px 5px 10px 1px #888888;
@@ -306,7 +314,6 @@ thead, tbody, tfoot, tr, td, th {
 }
 
 
-
 /* Tabel-paginanavigatie */
 
 .pagination {
@@ -349,8 +356,6 @@ thead, tbody, tfoot, tr, td, th {
   color: #305dc7;
   background-color: transparent;
 }
-
-
 
 
 button.copybutton {
