@@ -69,6 +69,14 @@ if( $MM == 6 ){
 }
 }
 
+if( $MM == 7 ){
+   if( $DD == 21 ){
+  $pic = "https://www.torchcraft.nl/images/tclogo-belgie.png";
+ }else  {
+  $pic = "https://www.torchcraft.nl/images/tclogo-standaard.png";
+}
+}
+
 if( $MM == 9 ){
    if( $DD >= 21 and $DD <= 30){
   $pic = "https://www.torchcraft.nl/images/tclogo-herfst.png";
@@ -77,7 +85,7 @@ if( $MM == 9 ){
 }
 }
 
-if( $MM == 11 ){
+if( $MM == 10 ){
    if( $DD == 31 ){
   $pic = "https://www.torchcraft.nl/images/tclogo-halloween.png";
  }else  {
