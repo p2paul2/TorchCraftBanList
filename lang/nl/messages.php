@@ -63,7 +63,7 @@ return [
     'player_kicks' => 'Kicks :kicks',
     'player_warns' => 'Warns :warns',
 
-    'placeholder_search_player' => '&#xf002; Spelernaam...',
+    'placeholder_search_player' => '&#xf002; Spelersnaam...',
     'placeholder_search' => '&#xf002; Zoek...',
 
     'homepage_text' => '<h1>Welkom op de NetworkManager Ban Lijst.</h1>
