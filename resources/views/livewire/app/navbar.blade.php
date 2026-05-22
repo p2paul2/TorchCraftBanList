@@ -143,7 +143,7 @@ echo "<img src=\"{$pic}\" title=\"Terug naar de homepage\" alt=\"TorchCraft logo
 
   <a href="https://discordapp.com/invite/w3hxqT5" class="menuopvallend" target="_blank" title="Discordserver">Discord</a><br>
  
-  <a href="https://help.torchcraft.nl/" title="Hulppagina's">Hulp</a><br>
+  <a href="https://help.torchcraft.nl/" title="Infopagina's">Info</a><br>
 
   <a href="https://help.torchcraft.nl/algemene-informatie/regels" title="Regels">Regels</a><br>
 
